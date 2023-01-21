@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial_advice</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+    }
+    h1 {
+      color: black;
+      font-size: 30px;
+      font-weight: thin;
+      text-decoration: underline;
+      text-align: center;
+    }
+    h2 {
+      color: #272044;
+      font-size: 25px;
+      text-align: center;
+      font-style: oblique;
+    }
+    .box {
+      width: 60%;
+      height: 100px;
+      border: 5px;
+      display: inline;
+    }
+    img {
+      border-radius: 10px;
+      width: 50%;
+      margin: auto;
+      display: block;
+    }
+    hr {
+      text-decoration-thickness: thick;
+      margin-top: 20px;
+    }
+    p {
+      line-height: 25px;
+      font-family: serif;
+      font-size: 17px;
+    }
+    ul {
+      font-family: serif;
+      font-size: 17px;
+    }
+    button {
+      width: 100px;
+      margin: auto;
+      display: block;
+      color: black;
+      padding: 10px;
+      background: transparent;
+      border: 1px solid black;
+      border-radius: 40px;
+      transition: all 200ms ease-in-out;
+      box-shadow: 5px 5px;
+    }
+    span {
+      font-style: oblique;
+      font-weight: bold;
+    }
+    .source-code {
+      font-weight: bold;
+      color: black;
+    }
+  </style>
+  <body>
+    <h1>Top safe haven investment</h1>
+    <h2>Gold or Bitcoin?</h2>
+    <div class="box">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/051/812/original/Financial_advice.jpg?1667731285"
+      />
+    </div>
+    <hr />
+    <p>
+      If you have to choose between investing on gold, stock, real estate, and
+      bitcoin, which one would you choose and why?
+      <br />
+      For the past years bitcoin and stocks have been estimated to make a
+      <span>200%</span>
+      return on investment but now this has changed, because stock are extremely
+      overinflated right now and bitcoin has come out if its bear market and
+      into a fully fledged bull market that will last for roughly 12 more
+      months. Thats why now I would say to diversify as follows
+    </p>
+
+    <ul>
+      <li>40% in cash</li>
+      <li>20% in real estate</li>
+      <li>20% in bitcoin</li>
+      <li>10% in gold</li>
+      <li>10% in stocks</li>
+    </ul>
+
+    <em>
+      <strong>
+        It looks like Gold and precious metals will probably not see so much
+        interest since gold investors are leaving in droves to invest in digital
+        gold, Bitcoin.
+      </strong>
+    </em>
+    <br />
+    <a
+      href="https://twitter.com/danheld?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1335584867418066946%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.quora.com%2F"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Read more on</a
+    >
+
+    <section>
+      <br />
+      <button>Invest now</button>
+    </section>
+    <br />
+    <a class="source-code" href="https://github.com/Ogooezeani/financial-advice"
+      >open-source code</a
+    >
+    By Ogochukwu Ezeani
+    <script>
+      function invest() {
+        let name = prompt("what is your name?");
+        let age = prompt("How old are you?");
+
+        if (age >= 21) {
+          alert("You can invest");
+        } else {
+          alert("You can not invest");
+        }
+      }
+
+      let investButton = document.querySelector("button");
+      investButton.addEventListener("click", invest);
+    </script>
+  </body>
+</html>
